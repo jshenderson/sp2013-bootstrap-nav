@@ -1,6 +1,6 @@
 // Bootstrap Top Navigation script for SP2013/SP2016
 // Author: Thomas Daly
-// Modified By: Josh Henderson / using _spPageContextInfo.webAbsoluteUrl, and appended "Home" to the navigation (line 73-74)
+// Modified By: Josh Henderson / using _spPageContextInfo.webAbsoluteUrl, and appended "Home" to the navigation (line 73-76)
 // Date: 2/20/2017
 // Version: 0.5
 
