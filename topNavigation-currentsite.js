@@ -2,7 +2,7 @@
 // Author: Thomas Daly
 // Modified By: Josh Henderson / using _spPageContextInfo.webAbsoluteUrl, and appended "Home" to the navigation (line 73-74)
 // Date: 2/20/2017
-// Version: 0.4
+// Version: 0.5
 
 var topNav = window.topNav || {};
 
@@ -70,8 +70,10 @@ topNav = function () {
 		var nodeGroup = $("<ul/>", nodeGroupProps);
 		// append the node group to the target selector, might be the root <ul> or a child <ul> (dropdown)
 		$(targetSelector).append(nodeGroup);
-		//append a "home" link to the navigation
-		nodeGroup.append("<li><a href='" + _spPageContextInfo.webAbsoluteUrl + "'>Home</a></li>");
+		//append a "home" link to the navigation only if it doesn't already exist
+		if(!document.getElementById("homeLink")){
+			$('#topNavigation ul.nav').prepend("<li id='homeLink'><a href='" + _spPageContextInfo.webAbsoluteUrl + "'>Home</a></li>");
+		}
 		// iterate each navigation node and add to the node group above
 		$.each(navigationNodes, function (index, item) {
             
