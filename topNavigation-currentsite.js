@@ -191,5 +191,5 @@ topNav = function () {
 
 $(document).ready(function() {
 	// when doc ready call the load navigation function
-	topNav.LoadNavigation("#auTopNavigation");  // the top level div where to put the navgiation nodes
+	topNav.LoadNavigation("#topNavigation");  // the top level div where to put the navgiation nodes
 });
